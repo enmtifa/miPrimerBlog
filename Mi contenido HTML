@@ -8,69 +8,13 @@
     body {
       font-family: sans-serif;
       text-align: center;
-      padding-top: 10%;
+      padding-top: 20%;
       background: #f4f4f4;
       color: #333;
-    }
-
-    h1 {
-      margin-bottom: 30px;
-    }
-
-    .botones {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* separa los botones */
-      flex-wrap: wrap;
-    }
-
-    .boton {
-      border: none;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      width: 150px;
-      padding: 10px;
-    }
-
-    .boton:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .boton img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-    }
-
-    .boton span {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi blog 🎉</h1>
-
-  <div class="botones">
-    <button class="boton" onclick="window.location.href='https://tusitio1.com'">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Blog">
-      <span>Blog</span>
-    </button>
-
-    <button class="boton" onclick="window.location.href='https://tusitio2.com'">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="GitHub">
-      <span>GitHub</span>
-    </button>
-
-    <button class="boton" onclick="window.location.href='https://tusitio3.com'">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Contacto">
-      <span>Contacto</span>
-    </button>
-  </div>
+  <h1>Bienvenido a mi blog Elena🎉</h1>
 </body>
 </html>
