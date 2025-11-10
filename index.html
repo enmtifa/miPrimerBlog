@@ -5,80 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Blog</title>
   <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 10%;
-      background: #f4f4f4;
-      color: #333;
-    }
+    <body>
+  <div class="contenedor">
+    <h1>Bienvenido al blog de Elena Núñez</h1>
 
-    h1 {
-      margin-bottom: 30px;
-    }
+    <p>Hola, soy Elena Núñez y actualmente estudio Ingeniería Informática en la UNIR.
+    Nací en Venezuela, donde cursé la carrera de Ingeniería Geofísica, una disciplina dedicada al estudio de la Tierra y sus minerales, con el objetivo de determinar, por ejemplo, qué zonas son adecuadas para construir o dónde es posible extraer recursos minerales valiosos para el desarrollo humano.</p>
 
-    .botones {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* separa los botones */
-      flex-wrap: wrap;
-    }
+    <p>En 2015 decidí trasladarme a España en busca de una mejor calidad de vida, ya que la situación en mi país era complicada. En el 2016 comencé a trabajar en LCRcom, donde descubrí mi interés por la informática al interactuar con el software interno de la empresa. Esa experiencia me motivó a iniciar mis estudios en Ingeniería Informática.</p>
 
-    .boton {
-      border: none;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      width: 150px;
-      padding: 10px;
-    }
+    <p>Actualmente, trabajo en el Grupo Aire (anteriormente LCRcom) como Soporte IT, brindando asistencia a los usuarios en la resolución de incidencias del sistema y realizando consultas a bases de datos para la elaboración de informes y análisis internos.</p>
 
-    .boton:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+    <p>En mi tiempo libre, me gusta jugar videojuegos junto a mi pareja. Disfrutamos especialmente de títulos como Diablo IV, The Legend of Zelda, StarCraft y muchos otros que nos han acompañado a lo largo de los años. 🎮</p>
 
-    .boton img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-    }
+    <div class="botones">
+      <button class="boton" onclick="window.open('https://www.unir.net/', '_blank')">
+        <img src="https://enmtifa.github.io/miPrimerBlog/imagenes/icono_unir.png" alt="UNIR">
+        <span>UNIR</span>
+      </button>
 
-    .boton span {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <h1>Bienvenido al blog de Elena Núñez</h1>
-  <p> Hola, soy Elena Núñez y actualmente estudio Ingeniería Informática en la UNIR.
-Nací en Venezuela, donde cursé la carrera de Ingeniería Geofísica, una disciplina dedicada al estudio de la Tierra y sus minerales, con el objetivo de determinar, por ejemplo, qué zonas son adecuadas para construir o dónde es posible extraer recursos minerales valiosos para el desarrollo humano.</p>
+      <button class="boton" onclick="window.open('https://diablo4.blizzard.com/es-es/', '_blank')">
+        <img src="imagenes/diabloiv.png" alt="DiabloIV">
+        <span>Diablo_IV</span>
+      </button>
 
- <p> En 2015 decidí trasladarme a España en busca de una mejor calidad de vida, ya que la situación en mi país era complicada. En el 2016 comence a trabajar en LCRcom, donde descubrí mi interés por la informática al interactuar con el software interno de la empresa. Esa experiencia me motivó a iniciar mis estudios en Ingeniería Informática.</p>
-
-<p> Actualmente, trabajo en el Grupo Aire (anteriormente LCRcom) como Soporte IT, brindando asistencia a los usuarios en la resolución de incidencias del sistema y realizando consultas a bases de datos para la elaboración de informes y análisis internos.</p>
-
-<p> En mi tiempo libre, me gusta jugar videojuegos junto a mi pareja. Disfrutamos especialmente de títulos como Diablo IV, The Legend of Zelda, StarCraft y muchos otros que nos han acompañado a lo largo de los años. 🎮</p>
-
-  <div class="botones">
-    <button class="boton" onclick="window.open('https://www.unir.net/', '_blank')">
-      <img src="https://enmtifa.github.io/miPrimerBlog/imagenes/icono_unir.png" alt="UNIR">
-      <span>UNIR</span>
-    </button>
-
-    <button class="boton" onclick="window.open('https://diablo4.blizzard.com/es-es/', '_blank')">
-      <img src="imagenes/diabloiv.png" alt="DiabloIV">
-      <span>Diablo_IV</span>
-    </button>
-
-    <button class="boton" onclick="window.open('https://grupoaire.es/', '_blank')">
-      <img src="imagenes/icono_grupoaire.png" alt="GrupoAire">
-      <span>GrupoAire</span>
-    </button>
+      <button class="boton" onclick="window.open('https://grupoaire.es/', '_blank')">
+        <img src="imagenes/icono_grupoaire.png" alt="GrupoAire">
+        <span>GrupoAire</span>
+      </button>
+    </div>
   </div>
 </body>
-</html>
+/*Formato del CSS*/ 
+.contenedor {
+  max-width: 600px;  /* controla el ancho del texto */
+  margin: 0 auto;    /* centra el bloque en la página */
+  background: #fff;  /* opcional: fondo blanco */
+  padding: 20px;     /* espacio interior */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contenedor p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.botones {
+  margin-top: 30px;
+}
+
